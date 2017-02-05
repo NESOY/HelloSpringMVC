@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Index</title>
   </head>
   <body>
-  Hello Spring World
+
+  <p> <a href="${pageContext.request.contextPath}/offers"/> Show Current Offers </p>
+  <p> <a href="${pageContext.request.contextPath}/createoffer"/> Add a new Offer </p>
+
   </body>
 </html>
