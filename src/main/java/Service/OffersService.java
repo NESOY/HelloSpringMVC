@@ -23,4 +23,8 @@ public class OffersService {
     public List<Offer> getCurrent() {
         return offerDAO.getOffers();
     }
+
+    public boolean insert(Offer offer) {
+        return  offerDAO.insert(offer);
+    }
 }

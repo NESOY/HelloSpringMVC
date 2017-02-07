@@ -34,4 +34,11 @@ public class OffersController {
     public String createOffer(Model model){
         return "createoffer";
     }
+
+    @RequestMapping("/docreate")
+    public String dpCreate(Model model,Offer offer){
+
+        offersService.insert(offer);
+        return "offerCreated";
+    }
 }
