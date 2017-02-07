@@ -1,12 +1,24 @@
 package Model;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Size;
+
 /**
  * Created by NESOY on 2017-02-05.
  */
 public class Offer {
     private int id;
+
+    @Size(min=2, max=100, message = "Name must be between 2 and 100 Chars")
     private String name;
+
+    @Email(message = "Please Provide a valid email address")
+    @NotEmpty(message = "The email Address Cannot be empty")
     private String email;
+
+    @Size(min=5, max=100, message = "Text must be between 5 and 100 chars")
     private String text;
 
     public Offer(){
