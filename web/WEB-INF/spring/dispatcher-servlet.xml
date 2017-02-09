@@ -8,9 +8,9 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
 
-
     <mvc:annotation-driven></mvc:annotation-driven>
     <context:component-scan base-package="Controller"></context:component-scan>
+
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"></property>

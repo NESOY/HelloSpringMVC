@@ -27,4 +27,8 @@ public class OffersService {
     public boolean insert(Offer offer) {
         return  offerDAO.insert(offer);
     }
+
+    public Offer getUser(String id) {
+        return offerDAO.getOffer(id);
+    }
 }
